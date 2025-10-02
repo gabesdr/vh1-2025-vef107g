@@ -1,9 +1,13 @@
 {
   "name": "vh1-2025-vef107g",
   "version": "1.0.0",
-  "description": "super cool hopverkefni",
-  "main": "index.js",
+  "description": "Hópverkefni 1 - Vefhönnun",
+  "source": "efni/index.html",
   "scripts": {
+    "dev": "parcel efni/*.html --lazy --no-cache",
+    "start": "parcel",
+    "build": "parcel build",
+    "lint": "stylelint **/*.scss",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -17,7 +21,8 @@
   },
   "homepage": "https://github.com/gabesdr/vh1-2025-vef107g#readme",
   "devDependencies": {
-    "sass": "^1.93.2",
+    "@parcel/transformer-sass": "^2.16.0",
+    "parcel": "^2.16.0",
     "stylelint": "^16.24.0",
     "stylelint-config-standard": "^39.0.0"
   }
