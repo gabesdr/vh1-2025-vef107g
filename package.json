@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "parcel efni/*.html --lazy --no-cache",
     "start": "parcel",
-    "build": "parcel build",
+    "build": "parcel build efni/*.html --no-cache",
     "lint": "stylelint **/*.scss --fix",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
