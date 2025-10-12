@@ -1,1 +1,6 @@
-@use "styles/config.scss";
+@use "styles/config";
+@use "styles/reset";
+@use "styles/layout";
+@use "styles/components/header";
+@use "styles/components/footer";
+@use "styles/site-specifics/lausnir";
