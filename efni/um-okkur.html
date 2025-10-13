@@ -17,21 +17,48 @@
     <link rel="stylesheet" href="../styles.scss">
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="logo">
-                <p>
-                <span>λ</span>
-                <span>Forritarafjelagið</span>
-            </div>
-            <ul>
-                <li><a href="index.html">Forsíða</a></li>
-                <li><a href="lausnir.html">Lausnir</a></li>
-                <li><a href="um-okkur.html" class="active">Um okkur</a></li>
-                <li><a href="index.html">Starfsfólk</a></li>
-            </ul>
-        </nav>
-    </header>
+
+    <!-- JS: JavaScript stjórnar því þegar valmyndin opnast/lokast -->
+<header class="site-header">
+  <div class="header-inner">
+    <div class="logo">
+      <img src="../myndir/Logo.svg" alt="Forritarafélagið Logo" class="logo-img">
+      <span class="brand">Forritarafjelagið</span>
+    </div>
+
+    <!-- JS: þegar ýtt er á þennan, opnar/lokar mobile menu -->
+    <button class="nav-toggle" aria-label="Opna valmynd">
+      <span class="icon-burger">&#9776;</span>
+      <span class="icon-close">×</span>
+    </button>
+
+    <!-- JS: falin á mobile -->
+    <nav class="main-nav">
+      <ul>
+        <li><a href="index.html">Forsíða</a></li>
+        <li><a href="lausnir.html">Lausnir</a></li>
+        <li><a href="um-okkur.html" class="active">Um okkur</a></li>
+        <li><a href="index.html">Starfsfólk</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <!-- JS: Þetta er mobile menu sem JS sýnir/felur -->
+  <nav id="mobile-menu" class="mobile-menu" hidden>
+    <div class="mobile-menu-top">
+      <img src="../myndir/Logo.svg" alt="Forritarafélagið Logo">
+      <!-- JS: þetta er loka takkinn -->
+      <button class="nav-close" aria-label="Loka valmynd">×</button>
+    </div>
+
+    <!-- JS: þarf ekki að snerta þessa links, bara togglar sýnileika -->
+    <a href="index.html" class="mobile-link">Forsíða</a>
+    <a href="lausnir.html" class="mobile-link">Lausnir</a>
+    <a href="um-okkur.html" class="mobile-link is-active">Um okkur</a>
+    <a href="index.html" class="mobile-link">Starfsfólk</a>
+  </nav>
+</header>
+
     <main>
 
         <section class="about">

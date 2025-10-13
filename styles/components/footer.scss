@@ -1,22 +1,30 @@
 .site-footer {
-  background: #fff;
-  border-top: 1px solid #d9d9d9;
-  color: #000;
   padding: 2rem 2rem 10rem;
   font-size: 0.95rem;
+  color: #000;
+  background: #fff;
+  border-top: 1px solid #d9d9d9;
+
+  a {
+    color: #000;
+    white-space: nowrap;
+    text-decoration: none;
+    transition: text-decoration 0.2s ease;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
 
   .footer-inner {
-    max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-
     display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-
+    flex-wrap: wrap;
     gap: 6rem;
-    padding-left: 2rem;
-    padding-right: 2rem;
+    align-items: flex-start;
+    justify-content: flex-start;
+    max-width: 1200px;
+    padding-inline: 2rem;
+    margin-inline: auto;
 
     > * {
       flex: 1 1 0;
@@ -27,8 +35,8 @@
   .footer-brand {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
     gap: 2rem;
+    align-items: flex-start;
 
     .symbol,
     .footer-logo {
@@ -43,11 +51,11 @@
       gap: 0.75rem;
 
       a {
-        width: 24px;
-        height: 24px;
         display: inline-flex;
         align-items: center;
         justify-content: center;
+        width: 24px;
+        height: 24px;
 
         img {
           width: 100%;
@@ -68,58 +76,46 @@
     flex-direction: column;
 
     h4 {
+      margin-bottom: 1rem;
       font-size: 1rem;
       font-weight: 600;
-      margin-bottom: 1rem;
     }
 
     ul {
-      list-style: none;
-      margin: 0;
       padding: 0;
+      margin: 0;
+      list-style: none;
 
       li {
         margin-top: 0.6rem;
-
-        a {
-          color: #000;
-          text-decoration: none;
-          white-space: nowrap;
-
-          &:hover {
-            text-decoration: underline;
-          }
-        }
       }
     }
   }
 
-  @media (max-width: 900px) {
-  .footer-inner {
-    flex-direction: column;
-    gap: 3rem;
-  }
-
-  .footer-brand {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-start;
-    margin-bottom: 2rem;
-
-    .social {
-      margin-left: auto;
-      display: flex;
-      gap: 1rem;
+  @media (width <= 900px) {
+    .footer-inner {
+      flex-direction: column;
+      gap: 3rem;
+      padding-inline: 1rem;
     }
 
-    .footer-logo,
-    .symbol {
-      width: 40px;
-      height: auto;
-      display: block;
+    .footer-brand {
+      flex-direction: row;
+      align-items: center;
+      justify-content: flex-start;
+      width: 100%;
+      margin-bottom: 2rem;
+
+      .social {
+        gap: 1rem;
+        margin-left: auto;
+      }
+
+      .footer-logo,
+      .symbol {
+        width: 40px;
+        height: auto;
+      }
     }
   }
-}
 }

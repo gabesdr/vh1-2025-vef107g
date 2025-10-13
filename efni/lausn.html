@@ -17,21 +17,47 @@
     <link rel="stylesheet" href="../styles.scss">
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="logo">
-                <p>
-                <span>λ</span>
-                <span>Forritarafjelagið</span>
-            </div>
-            <ul>
-                <li><a href="index.html">Forsíða</a></li>
-                <li><a href="lausnir.html" class="active">Lausnir</a></li>
-                <li><a href="um-okkur.html">Um okkur</a></li>
-                <li><a href="index.html">Starfsfólk</a></li>
-            </ul>
+    <!-- JS: JavaScript stjórnar því þegar valmyndin opnast/lokast -->
+<header class="site-header">
+    <div class="header-inner">
+        <div class="logo">
+        <img src="../myndir/Logo.svg" alt="Forritarafélagið Logo" class="logo-img">
+        <span class="brand">Forritarafjelagið</span>
+        </div>
+
+        <!-- JS: þegar ýtt er á þennan, opnar/lokar mobile menu -->
+        <button class="nav-toggle" aria-label="Opna valmynd">
+        <span class="icon-burger">&#9776;</span>
+        <span class="icon-close">×</span>
+        </button>
+
+        <!-- JS: falin á mobile -->
+        <nav class="main-nav">
+        <ul>
+            <li><a href="index.html">Forsíða</a></li>
+            <li><a href="lausnir.html" class="active">Lausnir</a></li>
+            <li><a href="um-okkur.html">Um okkur</a></li>
+            <li><a href="index.html">Starfsfólk</a></li>
+        </ul>
         </nav>
-    </header>
+    </div>
+
+    <!-- JS: Þetta er mobile menu sem JS sýnir/felur -->
+    <nav id="mobile-menu" class="mobile-menu" hidden>
+        <div class="mobile-menu-top">
+        <img src="../myndir/Logo.svg" alt="Forritarafélagið Logo">
+        <!-- JS: þetta er loka takkinn -->
+        <button class="nav-close" aria-label="Loka valmynd">×</button>
+        </div>
+
+        <!-- JS: þarf ekki að snerta þessa links, bara togglar sýnileika -->
+        <a href="index.html" class="mobile-link">Forsíða</a>
+        <a href="lausnir.html" class="mobile-link is-active">Lausnir</a>
+        <a href="um-okkur.html" class="mobile-link">Um okkur</a>
+        <a href="index.html" class="mobile-link">Starfsfólk</a>
+    </nav>
+</header>
+
 
     <main>
         <!--Velja forrit og kaupa, smá upplýsingar undir-->
@@ -119,47 +145,47 @@
     <!--Footer / Socials-->
     <footer class="site-footer">
     <div class="footer-inner">
-      <div class="footer-brand">
+    <div class="footer-brand">
         <img src="../myndir/Logo.svg" alt="Forritarafélagið Logo" class="footer-logo">
         <div class="social">
-          <a href="https://x.com/haskoli_islands?lang=en"><img src="../myndir/Twitter.svg" alt="X"></a>
-          <a href="https://www.instagram.com/haskoli_islands/?hl=en"><img src="../myndir/Instagram.svg" alt="Instagram"></a>
-          <a href="https://www.youtube.com/user/HIvarp"><img src="../myndir/YouTube.svg" alt="YouTube"></a>
-          <a href="https://is.linkedin.com/school/háskóli-íslands"><img src="../myndir/LinkedIn.svg" alt="LinkedIn"></a>
+        <a href="https://x.com/haskoli_islands?lang=en"><img src="../myndir/Twitter.svg" alt="X"></a>
+        <a href="https://www.instagram.com/haskoli_islands/?hl=en"><img src="../myndir/Instagram.svg" alt="Instagram"></a>
+        <a href="https://www.youtube.com/user/HIvarp"><img src="../myndir/YouTube.svg" alt="YouTube"></a>
+        <a href="https://is.linkedin.com/school/háskóli-íslands"><img src="../myndir/LinkedIn.svg" alt="LinkedIn"></a>
         </div>
-      </div>
+    </div>
 
-      <div class="footer-col">
+    <div class="footer-col">
         <h4>Verkefni</h4>
         <ul>
-          <li><a href="index.html">Verkefni #1</a></li>
-          <li><a href="index.html">Verkefni #2</a></li>
-          <li><a href="index.html">Verkefni #3</a></li>
-          <li><a href="index.html">Verkefni #4</a></li>
+        <li><a href="index.html">Verkefni #1</a></li>
+        <li><a href="index.html">Verkefni #2</a></li>
+        <li><a href="index.html">Verkefni #3</a></li>
+        <li><a href="index.html">Verkefni #4</a></li>
         </ul>
-      </div>
+    </div>
 
-      <div class="footer-col">
+    <div class="footer-col">
         <h4>Lausnir</h4>
         <ul>
-          <li><a href="lausn.html">Lausn #1</a></li>
-          <li><a href="lausn.html">Lausn #2</a></li>
-          <li><a href="lausn.html">Lausn #3</a></li>
-          <li><a href="lausn.html">Lausn #4</a></li>
-          <li><a href="lausn.html">Lausn #5</a></li>
+        <li><a href="lausn.html">Lausn #1</a></li>
+        <li><a href="lausn.html">Lausn #2</a></li>
+        <li><a href="lausn.html">Lausn #3</a></li>
+        <li><a href="lausn.html">Lausn #4</a></li>
+        <li><a href="lausn.html">Lausn #5</a></li>
         </ul>
-      </div>
+    </div>
 
-      <div class="footer-col">
+    <div class="footer-col">
         <h4>Síður</h4>
         <ul>
-          <li><a href="index.html">Forsíða</a></li>
-          <li><a href="lausnir.html">Lausnayfirlit</a></li>
-          <li><a href="um-okkur.html">Um okkur</a></li>
-          <li><a href="index.html">Starfsfólk</a></li>
+        <li><a href="index.html">Forsíða</a></li>
+        <li><a href="lausnir.html">Lausnayfirlit</a></li>
+        <li><a href="um-okkur.html">Um okkur</a></li>
+        <li><a href="index.html">Starfsfólk</a></li>
         </ul>
-      </div>
     </div>
-  </footer>
+    </div>
+</footer>
 </body>
 </html>
