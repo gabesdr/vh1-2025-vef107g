@@ -63,7 +63,7 @@ Fótur skal innihalda fjóra flokka:
 - [Michael Dziedzic](https://unsplash.com/@lazycreekimages?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash) á [Unsplash](https://unsplash.com/photos/clear-glass-ball-with-box-gEN5Btvf2Eg?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash)
 - Avatar mynd úr Figma hönnun
 
->  Útgáfa v.0.3.1
+>  Útgáfa v.0.4
 
 ## Útgáfusaga
 
@@ -77,4 +77,5 @@ Fótur skal innihalda fjóra flokka:
 | 0.2.3  | HTML og SCSS útfært, þarf samt að fínpússa verkefnið |
 | 0.3    | "Big Merge" - update, HTML og SCSS-branch komið í Main Branch + Package.JSON edits |
 | 0.3.1  | Read-Me Update |
+| 0.4    | Header toggle-button update |
 

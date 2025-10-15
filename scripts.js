@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', () => {
             mobileMenu.hidden = true;
         });
     });
-    // "Escape" key handler
+    // "Escape" key handler ef notandi er með lyklaborð á Spjaldtölvu.
     document.addEventListener('keydown', (e) => {
         if (e.key === 'Escape' && body.classList.contains('is-menu-open')) {
             body.classList.remove('is-menu-open');
