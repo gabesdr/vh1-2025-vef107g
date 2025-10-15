@@ -2,9 +2,9 @@
 
 ## Hópur
 
-- Verkefnastjóri (![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)) Gabríel del Rosario - gdr5@hi.is [gabesdr](https://github.com/gabesdr)
-- Aðal UI/UX-Forritari (CSS/HTML) Gabríel Óðinn Shurack - gos30@hi.is [GabrielSchurack07](https://github.com/GabrielSchurack07)
-- HTML-Forritari (HTML) Alans Trejis - alt@hi.is [ThaBlanky](https://github.com/ThaBlanky)
+- Verkefnastjóri (**JS/HTML**) Gabríel del Rosario - gdr5@hi.is [gabesdr](https://github.com/gabesdr)
+- Aðal UI/UX-Forritari (**CSS/HTML**) Gabríel Óðinn Shurack - gos30@hi.is [GabrielSchurack07](https://github.com/GabrielSchurack07)
+- HTML-Forritari (**HTML**) Alans Trejis - alt@hi.is [ThaBlanky](https://github.com/ThaBlanky)
 
 ## Lýsing á verkefni
 
@@ -63,7 +63,7 @@ Fótur skal innihalda fjóra flokka:
 - [Michael Dziedzic](https://unsplash.com/@lazycreekimages?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash) á [Unsplash](https://unsplash.com/photos/clear-glass-ball-with-box-gEN5Btvf2Eg?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash)
 - Avatar mynd úr Figma hönnun
 
->  Útgáfusaga 0.3.1
+>  Útgáfa v.0.3.1
 
 ## Útgáfusaga
 
