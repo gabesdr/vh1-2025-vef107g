@@ -1,16 +1,14 @@
 # Vefforritun 1, 2025, hópverkefni 1
 
-Verkefnið felst í því að smíða vef eftir forskrift í [Figma](https://www.figma.com/design/4BvcCrMKEQ9MHQw1xd4W5J/vef1-2025-h%C3%B3pverkefni-1).
-
 ## Hópur
 
-Hlutverk (XXX) Fulltnafn - HÍnotendanafn/tölvupóst "GithubUsername".
-
-Verkefnastjóri (JS/HTML) Gabríel del Rosario - gdr5@hi.is [gabesdr](https://github.com/gabesdr)
-Aðal UI/UX-Forritari (CSS/HTML) Gabríel Óðinn Shurack - gos30@hi.is [GabrielSchurack07](https://github.com/GabrielSchurack07)
-HTML-Forritari (HTML) Alans Trejis - alt@hi.is [ThaBlanky](https://github.com/ThaBlanky)
+- Verkefnastjóri (![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)) Gabríel del Rosario - gdr5@hi.is [gabesdr](https://github.com/gabesdr)
+- Aðal UI/UX-Forritari (CSS/HTML) Gabríel Óðinn Shurack - gos30@hi.is [GabrielSchurack07](https://github.com/GabrielSchurack07)
+- HTML-Forritari (HTML) Alans Trejis - alt@hi.is [ThaBlanky](https://github.com/ThaBlanky)
 
 ## Lýsing á verkefni
+
+Verkefnið felst í því að smíða vef eftir forskrift í [Figma](https://www.figma.com/design/4BvcCrMKEQ9MHQw1xd4W5J/vef1-2025-h%C3%B3pverkefni-1).
 
 Verkefnið er skipt í tvö mismunandi möppur, `efni` og `styles`, sem innihalda alla mikilvægustu skrárnar.
 
@@ -65,7 +63,7 @@ Fótur skal innihalda fjóra flokka:
 - [Michael Dziedzic](https://unsplash.com/@lazycreekimages?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash) á [Unsplash](https://unsplash.com/photos/clear-glass-ball-with-box-gEN5Btvf2Eg?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash)
 - Avatar mynd úr Figma hönnun
 
-> ![Build Status](https://img.shields.io/github/actions/workflow/status/username/repo/ci.yml)
+>  Útgáfusaga 0.3.1
 
 ## Útgáfusaga
 
@@ -77,6 +75,6 @@ Fótur skal innihalda fjóra flokka:
 | 0.2.1  | HTML Blueprint |
 | 0.2.2  | SCSS Blueprint |
 | 0.2.3  | HTML og SCSS útfært, þarf samt að fínpússa verkefnið |
-| 0.3    | "Big Merge" - update, HTML og SCSS-branch komið í Main Branch |
+| 0.3    | "Big Merge" - update, HTML og SCSS-branch komið í Main Branch + Package.JSON edits |
 | 0.3.1  | Read-Me Update |
 
