@@ -14,7 +14,8 @@ Verkefnið er skipt í tvö mismunandi möppur, `efni` og `styles`, sem innihald
 
 "Styles"-mappan inniheldur `components` og `sites`, í þeim eru SCSS skrárnar fyrir tilteknar síður og html-kóðar, þar á meðal basic scss configs.
 
-Hægt að keyra verkefnið með `npm run dev` eða `npm start`.
+Byrja á því að keyra ` npm install` til að sækja **Node_Modules**, svo er hægt að keyra verkefnið með `npm run dev` eða `npm start`.
+
 Hægt að nota `npm run lint` til að skoða villur á S/CSS skrárnar.
 
 Í main directory er gefið `.gitignore` og `.stylelintignore`.
