@@ -1,12 +1,218 @@
 <!DOCTYPE html>
 <html lang="is">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hello World</title>
-    <link rel="stylesheet" href="../styles.scss">
-</head>
-<body>
-    <h1>Hello, World!</h1>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Forritarafjelagið</title>
+        <link rel="stylesheet" href="../styles.scss" />
+    </head>
+
+    <body>
+
+        <!-- JS: JavaScript stjórnar því þegar valmyndin opnast/lokast -->
+    <header class="site-header">
+    <div class="header-inner">
+        <div class="logo">
+        <img src="../myndir/Logo.svg" alt="Forritarafélagið Logo" class="logo-img">
+        <span class="brand">Forritarafjelagið</span>
+        </div>
+
+        <!-- JS: þegar ýtt er á þennan, opnar/lokar mobile menu -->
+        <button class="nav-toggle" aria-label="Opna valmynd">
+        <span class="icon-burger">&#9776;</span>
+        <span class="icon-close">×</span>
+        </button>
+
+        <!-- JS: falin á mobile -->
+        <nav class="main-nav">
+        <ul>
+            <li><a href="index.html" class="active">Forsíða</a></li>
+            <li><a href="lausnir.html">Lausnir</a></li>
+            <li><a href="um-okkur.html">Um okkur</a></li>
+            <li><a href="index.html">Starfsfólk</a></li>
+        </ul>
+        </nav>
+    </div>
+
+    <!-- JS: Þetta er mobile menu sem JS sýnir/felur -->
+    <nav id="mobile-menu" class="mobile-menu" hidden>
+        <div class="mobile-menu-top">
+        <img src="../myndir/Logo.svg" alt="Forritarafélagið Logo">
+        <!-- JS: þetta er loka takkinn -->
+        <button class="nav-close" aria-label="Loka valmynd">×</button>
+        </div>
+
+        <!-- JS: þarf ekki að snerta þessa links, bara togglar sýnileika -->
+        <a href="index.html" class="mobile-link is-active">Forsíða</a>
+        <a href="lausnir.html" class="mobile-link">Lausnir</a>
+        <a href="um-okkur.html" class="mobile-link">Um okkur</a>
+        <a href="index.html" class="mobile-link">Starfsfólk</a>
+    </nav>
+    </header>
+    <!-- MAIN -->
+    <main class="index-main">
+    <!-- Hero -->
+    <section class="hero">
+        <div class="hero-content">
+        <h1>Forritun er okkar fag</h1>
+        <p>Sanngjörn verð fyrir allar lausnir</p>
+        <div class="hero-buttons">
+            <a href="#" class="btn btn-primary">Fá tilboð</a>
+            <a href="./lausnir.html" class="btn btn-secondary">Skoða lausnir</a>
+        </div>
+        </div>
+    </section>
+
+    <!-- Umsagnir -->
+    <section class="testimonials">
+        <h2>Umsagnir viðskiptavina</h2>
+        <p class="subtitle">Segir allt sem segja þarf</p>
+
+        <div class="testimonial-grid">
+            <div class="testimonial-card">
+            <blockquote>Frábærar lausnir</blockquote>
+            <div class="author">
+                <img src="../myndir/avatar.png" alt="Jóna Jónsdóttir">
+                <div class="author-info">
+                <span class="name">Jóna Jónsdóttir</span>
+                <span class="role">Eigandi Spilabúðarinnar</span>
+                </div>
+            </div>
+            </div>
+
+            <div class="testimonial-card">
+            <blockquote>Allt stóðst áætlun</blockquote>
+            <div class="author">
+                <img src="../myndir/avatar.png" alt="Gervimanneskja Langteftirnafn">
+                <div class="author-info">
+                <span class="name">Gervimanneskja Langteftirnafn</span>
+                <span class="role">Forstjóri Stofnunarinnar</span>
+                </div>
+            </div>
+            </div>
+
+            <div class="testimonial-card">
+            <blockquote>Forritarafjelagið er svo sannarlega málið í forritunarverkefnum!</blockquote>
+            <div class="author">
+                <img src="../myndir/avatar.png" alt="Óli">
+                <div class="author-info">
+                <span class="name">Óli</span>
+                <span class="role">Vefforritari</span>
+                </div>
+            </div>
+            </div>
+
+            <div class="testimonial-card">
+            <blockquote>Þessar lausnir spara tíma og vandræði, mælum með</blockquote>
+            <div class="author">
+                <img src="../myndir/avatar.png" alt="Verkefnastjóri">
+                <div class="author-info">
+                <span class="name">Verkefnastjóri</span>
+                <span class="role">Stórt fyrirtæki í Reykjavík</span>
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lausnir -->
+    <section class="solutions">
+        <h2>Lausnir</h2>
+        <p class="subtitle">Allt sem þú þarft</p>
+
+        <div class="solutions-grid">
+        <article class="solution-card">
+            <img src="../myndir/forritari.jpg" alt="Forritunarumhverfi og prófanir">
+            <div class="solution-content">
+            <h3>Forritunarumhverfi og prófanir</h3>
+            <p>Allt um forritunarumhverfi og mismunandi leiðir til að prófa forrit í þeim.</p>
+            </div>
+        </article>
+
+        <article class="solution-card">
+            <img src="../myndir/abstrakt.jpg" alt="Lausn #2">
+            <div class="solution-content">
+            <h3>Lausn #2</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+        </article>
+
+        <article class="solution-card">
+            <img src="../myndir/placeholder.png" alt="Lausn #3">
+            <div class="solution-content">
+            <h3>Lausn #3</h3>
+            <p>Vestibulum vestibulum felis nulla, in suscipit justo dignissim ultrices.</p>
+            </div>
+        </article>
+
+        <article class="solution-card">
+            <img src="../myndir/placeholder.png" alt="Lausn #4">
+            <div class="solution-content">
+            <h3>Lausn #4</h3>
+            <p>Vestibulum ac felis in lacus porta interdum. Curabitur vitae quam non massa interdum consectetur sed ut tellus.</p>
+            </div>
+        </article>
+        <article class="solution-card">
+            <img src="../myndir/placeholder.png" alt="Lausn #5">
+            <div class="solution-content">
+            <h3>Lausn #5</h3>
+            <p>Vivamus in imperdiet lectus. Phasellus sed arcu eu augue laoreet efficitur vitae at nisi.</p>
+            </div>
+        </article>
+        <article class="solution-card">
+            <img src="../myndir/placeholder.png" alt="Lausn #6">
+            <div class="solution-content">
+            <h3>Lausn #6</h3>
+            <p>Lorem id porttitor mauris. Nunc id porttitor mauris.</p>
+            </div>
+        </article>
+        </div>
+    </section>
+    </main>
+    <footer class="site-footer">
+        <div class="footer-inner">
+        <div class="footer-brand">
+            <img src="../myndir/Logo.svg" alt="Forritarafélagið Logo" class="footer-logo">
+            <div class="social">
+            <a href="https://x.com/haskoli_islands?lang=en"><img src="../myndir/Twitter.svg" alt="X"></a>
+            <a href="https://www.instagram.com/haskoli_islands/?hl=en"><img src="../myndir/Instagram.svg" alt="Instagram"></a>
+            <a href="https://www.youtube.com/user/HIvarp"><img src="../myndir/YouTube.svg" alt="YouTube"></a>
+            <a href="https://is.linkedin.com/school/háskóli-íslands"><img src="../myndir/LinkedIn.svg" alt="LinkedIn"></a>
+            </div>
+        </div>
+
+        <div class="footer-col">
+            <h4>Verkefni</h4>
+            <ul>
+            <li><a href="index.html">Verkefni #1</a></li>
+            <li><a href="index.html">Verkefni #2</a></li>
+            <li><a href="index.html">Verkefni #3</a></li>
+            <li><a href="index.html">Verkefni #4</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h4>Lausnir</h4>
+            <ul>
+            <li><a href="lausn.html">Lausn #1</a></li>
+            <li><a href="lausn.html">Lausn #2</a></li>
+            <li><a href="lausn.html">Lausn #3</a></li>
+            <li><a href="lausn.html">Lausn #4</a></li>
+            <li><a href="lausn.html">Lausn #5</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h4>Síður</h4>
+            <ul>
+            <li><a href="index.html">Forsíða</a></li>
+            <li><a href="lausnir.html">Lausnayfirlit</a></li>
+            <li><a href="um-okkur.html">Um okkur</a></li>
+            <li><a href="index.html">Starfsfólk</a></li>
+            </ul>
+        </div>
+        </div>
+    </footer>
+    <script src ="../scripts.js"></script> <!-- Javascript script source -->
 </body>
 </html>

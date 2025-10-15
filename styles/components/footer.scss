@@ -1,0 +1,121 @@
+.site-footer {
+  padding: 2rem 2rem 10rem;
+  font-size: 0.95rem;
+  color: #000;
+  background: #fff;
+  border-top: 1px solid #d9d9d9;
+
+  a {
+    color: #000;
+    white-space: nowrap;
+    text-decoration: none;
+    transition: text-decoration 0.2s ease;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  .footer-inner {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6rem;
+    align-items: flex-start;
+    justify-content: flex-start;
+    max-width: 1200px;
+    padding-inline: 2rem;
+    margin-inline: auto;
+
+    > * {
+      flex: 1 1 0;
+      min-width: 170px;
+    }
+  }
+
+  .footer-brand {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: flex-start;
+
+    .symbol,
+    .footer-logo {
+      display: block;
+      width: 32px;
+      height: auto;
+    }
+
+    .social {
+      display: flex;
+      flex-direction: row;
+      gap: 0.75rem;
+
+      a {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 24px;
+        height: 24px;
+
+        img {
+          width: 100%;
+          height: auto;
+          filter: brightness(0);
+          transition: opacity 0.2s ease;
+        }
+
+        &:hover img {
+          opacity: 0.7;
+        }
+      }
+    }
+  }
+
+  .footer-col {
+    display: flex;
+    flex-direction: column;
+
+    h4 {
+      margin-bottom: 1rem;
+      font-size: 1rem;
+      font-weight: 600;
+    }
+
+    ul {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+
+      li {
+        margin-top: 0.6rem;
+      }
+    }
+  }
+
+  @media (width <= 900px) {
+    .footer-inner {
+      flex-direction: column;
+      gap: 3rem;
+      padding-inline: 1rem;
+    }
+
+    .footer-brand {
+      flex-direction: row;
+      align-items: center;
+      justify-content: flex-start;
+      width: 100%;
+      margin-bottom: 2rem;
+
+      .social {
+        gap: 1rem;
+        margin-left: auto;
+      }
+
+      .footer-logo,
+      .symbol {
+        width: 40px;
+        height: auto;
+      }
+    }
+  }
+}
