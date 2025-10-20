@@ -57,7 +57,6 @@
         justify-content: center;
         width: 112px;
         height: 40px;
-        padding: 10px;
         font-size: 1rem;
         font-weight: 500;
         line-height: 1;
@@ -138,7 +137,7 @@
         margin-bottom: 24px;
         font-size: 24px;
         font-weight: 600;
-        letter-spacing: -2;
+        letter-spacing: -0.6;
         line-height: 120%;
         quotes: "„" "“";
 
@@ -262,7 +261,7 @@
     }
 }
 
-@media (width <= 700px) {
+@media (width <= 770px) {
         .index-main > *:not(.hero) {
             padding-inline: 24px;
         }
