@@ -80,5 +80,5 @@ Fótur skal innihalda fjóra flokka:
 | 0.3    | "Big Merge" - update, HTML og SCSS-branch komið í Main Branch + Package.JSON edits |
 | 0.3.1  | Read-Me Update |
 | 0.4    | Header toggle-button update |
-| 0.5    | Um-Okkur merge og read me update |
+| 0.5    | semi-Grid blueprint Um-Okkur merge og read me update |
 
