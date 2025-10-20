@@ -3,8 +3,9 @@
 ## Hópur
 
 - Verkefnastjóri (**JS/HTML**) Gabríel del Rosario - gdr5@hi.is [gabesdr](https://github.com/gabesdr)
-- Aðal UI/UX-Forritari (**CSS/HTML**) Gabríel Óðinn Shurack - gos30@hi.is [GabrielSchurack07](https://github.com/GabrielSchurack07)
+- Aðal UI/UX-Forritari (**CSS/HTML**) Gabriel Óðinn Schurack - gos30@hi.is [GabrielSchurack07](https://github.com/GabrielSchurack07)
 - HTML-Forritari (**HTML**) Alans Trejis - alt@hi.is [ThaBlanky](https://github.com/ThaBlanky)
+- HTML/CSS Forritari (**CSS/HTML**) Sigurður Óli Guðjónsson - sog70@hi.is [Sjolidos](https://github.com/Sjolidos)
 
 ## Lýsing á verkefni
 
@@ -14,7 +15,7 @@ Verkefnið er skipt í tvö mismunandi möppur, `efni` og `styles`, sem innihald
 
 "Styles"-mappan inniheldur `components` og `sites`, í þeim eru SCSS skrárnar fyrir tilteknar síður og html-kóðar, þar á meðal basic scss configs.
 
-Byrja á því að keyra ` npm install` til að sækja **Node_Modules**, svo er hægt að keyra verkefnið með `npm run dev` eða `npm start`.
+Byrja á því að keyra í Terminal `npm install` til að sækja **Node_Modules**, svo er hægt að keyra verkefnið með `npm run dev` eða `npm start`.
 
 Hægt að nota `npm run lint` til að skoða villur á S/CSS skrárnar.
 
@@ -64,7 +65,7 @@ Fótur skal innihalda fjóra flokka:
 - [Michael Dziedzic](https://unsplash.com/@lazycreekimages?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash) á [Unsplash](https://unsplash.com/photos/clear-glass-ball-with-box-gEN5Btvf2Eg?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash)
 - Avatar mynd úr Figma hönnun
 
->  Útgáfa v.0.4
+>  Útgáfa v.0.5
 
 ## Útgáfusaga
 
@@ -79,4 +80,5 @@ Fótur skal innihalda fjóra flokka:
 | 0.3    | "Big Merge" - update, HTML og SCSS-branch komið í Main Branch + Package.JSON edits |
 | 0.3.1  | Read-Me Update |
 | 0.4    | Header toggle-button update |
+| 0.5    | semi-Grid blueprint Um-Okkur merge og read me update |
 

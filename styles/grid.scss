@@ -1,0 +1,11 @@
+.containter {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: 12px;
+    grid-template-areas: 
+        "header header header header",
+        "nav main main"
+        "footer footer footer footer,";
+}
+
+// Þarf að skoða þetta aðeins nánar - gabesdr.
