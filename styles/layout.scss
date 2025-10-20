@@ -1,5 +1,13 @@
+@font-face {
+  font-family: 'Inter';
+  src: url('./fonts/Inter-VariableFont_opsz,wght.ttf') format('woff2');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
 body {
-    font-family: "Atkinson Hyperlegible", sans-serif;
+    font-family: "Inter", sans-serif;
     line-height: 1.5;
     color: #000;
     background: #fafafa;
