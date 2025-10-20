@@ -69,7 +69,7 @@
 
 .nav-toggle {
     position: relative;
-    display: none; /* JS: verður virkur á mobile með click event */
+    display: none;
     flex-shrink: 0;
     width: 40px;
     height: 40px;
@@ -79,7 +79,6 @@
 
     .icon-burger,
     .icon-close {
-        /* JS: JS mun toggla opacity milli þessara tveggja */
         position: absolute;
         top: 50%;
         left: 50%;
@@ -100,12 +99,11 @@
     }
     }
 
-    /* Mobile menu (JS togglar opnun/lokun) */
     .mobile-menu {
     position: fixed;
     inset: 0;
     z-index: 9999;
-    display: none; /* JS: breytir í flex */
+    display: none;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
@@ -113,7 +111,7 @@
     padding-right: 64px;
     padding-left: 52px;
     background: #fff;
-    opacity: 0; /* JS: breytir í 1 */
+    opacity: 0;
     transition: opacity 0.3s ease;
 
     .mobile-menu-top {
@@ -130,7 +128,7 @@
 
         button {
         font-size: 24px;
-        cursor: pointer; /* JS: Loka takki */
+        cursor: pointer;
         background: transparent;
         border: none;
         }
@@ -152,8 +150,7 @@
     }
 }
 
-/* --- Þegar JS togglar valmyndina --- */
-    body.is-menu-open { /* JS: bætir við þessum klassa þegar valmynd opnast */
+    body.is-menu-open {
     overflow: hidden;
 
     .mobile-menu {
@@ -176,7 +173,7 @@
 
     @media (width <= 768px) {
     .main-nav {
-        display: none; /* JS: kemur í staðinn fyrir mobile menu */
+        display: none;
     }
 
     .logo .brand {
@@ -184,7 +181,7 @@
     }
 
     .nav-toggle {
-        display: block; /* JS: gerir hamborgarann sýnilegan */
+        display: block;
     }
 
     .header-inner {
