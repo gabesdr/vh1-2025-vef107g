@@ -30,11 +30,11 @@
         height: 100%;
 
         h2 {
-        margin-bottom: 1rem;
-        font-size: 24px;
-        font-weight: 600;
-        line-height: 120%;
-        letter-spacing: -0.5;
+            margin-bottom: 1rem;
+            font-size: 24px;
+            font-weight: 600;
+            line-height: 120%;
+            letter-spacing: -0.5;
         }
 
         .badge {
@@ -57,101 +57,99 @@
         }
 
         p {
-        margin-bottom: 24px;
-        font-size: 1rem;
-        line-height: 140%;
-        color: #757575;
+            margin-bottom: 24px;
+            font-size: 1rem;
+            line-height: 140%;
+            color: #757575;
         }
         
         form {
-        display: flex;
-        flex-direction: column;
-        margin-bottom: 8px;
-
-        .form-row {
             display: flex;
-            flex-wrap: wrap;
-            gap: 1rem;
-
-            @media (width <= 900px) {
             flex-direction: column;
-            }
+            margin-bottom: 8px;
 
-            .form-group {
-            display: flex;
-            flex: 1;
-            flex-direction: column;
-            gap: 8px;
-            padding-bottom: 24px;
+            .form-row {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 1rem;
 
-            label {
+                @media (width <= 900px) {
+                    flex-direction: column;
+                }
+
+                .form-group {
+                    display: flex;
+                    flex: 1;
+                    flex-direction: column;
+                    gap: 8px;
+                    padding-bottom: 24px;
+
+                    label {
+                        font-size: 1rem;
+                        font-weight: 400;
+                        line-height: 140%;
+                    }
+
+                    select {
+                        padding-left: 1rem;
+                        padding-top: 12px;
+                        padding-right: 12px;
+                        padding-bottom: 12px;
+                        font-size: 1rem;
+                        cursor: pointer;
+                        background: #fff;
+                        border: 1px solid #ccc;
+                        border-radius: 8px;
+                        transition: border 0.2s ease;
+
+                            &:focus {
+                                border-color: #000;
+                            }
+        }
+    }
+}
+
+            button {
+                padding: 12px;
                 font-size: 1rem;
-                font-weight: 400;
-                line-height: 140%;
-            }
-
-            select {
-                padding-left: 1rem;
-                padding-top: 12px;
-                padding-right: 12px;
-                padding-bottom: 12px;
-                font-size: 1rem;
+                font-weight: 500;
+                color: #fff;
                 cursor: pointer;
-                background: #fff;
-                border: 1px solid #ccc;
+                background: #2C2C2C;
+                border: none;
                 border-radius: 8px;
-                transition: border 0.2s ease;
+                transition: background 0.2s ease;
 
-                &:focus {
-                border-color: #000;
+                &:hover {
+                    background: #333;
                 }
             }
-            }
-        }
-
-        button {
-            padding: 12px;
-            font-size: 1rem;
-            font-weight: 500;
-            color: #fff;
-            cursor: pointer;
-            background: #2C2C2C;
-            border: none;
-            border-radius: 8px;
-            transition: background 0.2s ease;
-
-            &:hover {
-            background: #333;
-            }
-        }
         }
 
         details {
-        margin-top: 1rem;
-        padding: 1rem;
-        background: #FFFFFF;
-        border: 1px solid #D9D9D9;
-        border-radius: 8px;
-        transition: background 0.2s ease;
-
-        summary {
-            font-size: 1rem;
-            margin-bottom: 8px;
-            font-weight: 600;
-            cursor: pointer;
-        }
-
-        p {
-            font-size: 0.95rem;
-            color: #555;
-            margin-bottom: 1rem;
-        }
-
-        &[open] {
+            margin-top: 1rem;
+            padding: 1rem;
             background: #FFFFFF;
-        }
+            border: 1px solid #D9D9D9;
+            border-radius: 8px;
+            transition: background 0.2s ease;
 
-        
+            summary {
+                font-size: 1rem;
+                margin-bottom: 8px;
+                font-weight: 600;
+                cursor: pointer;
+            }
+
+            p {
+                font-size: 0.95rem;
+                color: #555;
+                margin-bottom: 1rem;
+            }
+
+            &[open] {
+                background: #FFFFFF;
+            }
         }
     }
 }
@@ -191,63 +189,63 @@
         transition: transform 0.2s ease, box-shadow 0.2s ease;
 
         &:hover {
-        box-shadow: 0 6px 10px rgb(0 0 0 / 5%);
-        transform: translateY(-3px);
+            box-shadow: 0 6px 10px rgb(0 0 0 / 5%);
+            transform: translateY(-3px);
         }
 
         .stars {
-        margin-bottom: 24px;
-        font-size: 28px;
-        color: #1E1E1E;
+            margin-bottom: 24px;
+            font-size: 28px;
+            color: #1E1E1E;
         }
 
         h4 {
-        font-size: 24px;
-        font-weight: 600;
-        letter-spacing: -0.5;
+            font-size: 24px;
+            font-weight: 600;
+            letter-spacing: -0.5;
         }
 
         .excerpt {
-        flex-grow: 1;
-        margin-bottom: 24px;
-        font-size: 1rem;
-        line-height: 140%;
-        color: #1E1E1E;
-        font-weight: 400;
+            flex-grow: 1;
+            margin-bottom: 24px;
+            font-size: 1rem;
+            line-height: 140%;
+            color: #1E1E1E;
+            font-weight: 400;
         }
 
         .author {
-        display: flex;
-        gap: 12px;
-        align-items: center;
-        margin-top: auto;
-
-        img {
-            width: 40px;
-            height: 40px;
-            object-fit: cover;
-            border-radius: 50%;
-        }
-
-        .author-info {
             display: flex;
-            flex-direction: column;
-            justify-content: center;
+            gap: 12px;
+            align-items: center;
+            margin-top: auto;
 
-            .name {
-            font-size: 1rem;
-            font-weight: 600;
-            color: #757575;
-            line-height: 140%;
+            img {
+                width: 40px;
+                height: 40px;
+                object-fit: cover;
+                border-radius: 50%;
             }
 
-            .role {
-            font-size: 1rem;
-            color: #777;
-            font-weight: 400;
-            line-height: 140%;
+            .author-info {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+
+                .name {
+                    font-size: 1rem;
+                    font-weight: 600;
+                    color: #757575;
+                    line-height: 140%;
+                }
+
+                .role {
+                    font-size: 1rem;
+                    color: #777;
+                    font-weight: 400;
+                    line-height: 140%;
+                }
             }
-        }
         }
     }
 }
@@ -280,18 +278,18 @@
         justify-content: center;
 
         input[type="email"] {
-        flex: 1;
-        min-width: 200px;
-        padding: 0.6rem 1rem;
-        font-size: 1rem;
-        outline: none;
-        border: 1px solid #ccc;
-        border-radius: 8px;
-        transition: border 0.2s ease;
+            flex: 1;
+            min-width: 200px;
+            padding: 0.6rem 1rem;
+            font-size: 1rem;
+            outline: none;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            transition: border 0.2s ease;
 
-        &:focus {
-            border-color: #000;
-        }
+            &:focus {
+                border-color: #000;
+            }
         }
 
         input[type="email"]::placeholder{
@@ -299,18 +297,18 @@
         }
 
         button {
-        padding: 0.6rem 1rem;
-        font-size: 0.95rem;
-        color: #fff;
-        cursor: pointer;
-        background: #2C2C2C;
-        border: none;
-        border-radius: 8px;
-        transition: background 0.2s ease;
+            padding: 0.6rem 1rem;
+            font-size: 0.95rem;
+            color: #fff;
+            cursor: pointer;
+            background: #2C2C2C;
+            border: none;
+            border-radius: 8px;
+            transition: background 0.2s ease;
 
-        &:hover {
-            background: #333;
-        }
+            &:hover {
+                background: #333;
+            }
         }
     }
 }
