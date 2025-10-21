@@ -55,26 +55,26 @@
 
 
   <!-- Main -->
-  <main class="lausnir-main container">
+  <main class="lausnir-main">
     <!-- Filter -->
     <aside class="lausnir-filter">
       <ul>
         <li>
           <input type="checkbox" id="vefforritun">
-          <label for="vefforritun"><strong>Vefforritun</strong><br>Lausnir fyrir vefi og vefforrit</label>
+          <label for="vefforritun">Vefforritun<br><span>Lausnir fyrir vefi og vefforrit</span></label>
         </li>
         <li>
           <input type="checkbox" id="profanir">
-          <label for="profanir"><strong>Prófanir</strong><br>Prófanalausnir</label>
+          <label for="profanir">Prófanir<br><span>Prófanalausnir</span></label>
         </li>
         <li>
           <input type="checkbox" id="merking">
-          <label for="merking"><strong>Merking</strong><br>Lorem ipsum dolor</label>
+          <label for="merking">Merking<br><span>Lorem ipsum dolor</span></label>
         </li>
       </ul>
 
       <div class="cost">
-        <label for="cost"><strong>Kostnaður</strong> 25.000 - 100.000</label>
+        <label for="cost">Kostnaður&nbsp;&nbsp;&nbsp; <small>25.000 - 100.000</small></label>
         <input type="range" id="minRange" min="25000" max="100000" step="5000" value="25000">
       </div>
     </aside>
@@ -82,7 +82,17 @@
     <!-- Content -->
     <section class="lausnir-content">
       <div class="lausnir-topbar">
-        <input type="search" placeholder="Leita" class="lausnir-search">
+        <div class="filter-search-row">
+          <button class="filter-button">
+            <img src="../myndir/Filter.svg" alt="Filter">
+          </button>
+
+          <div class="search-wrapper">
+            <input type="search" placeholder="Leita" class="lausnir-search">
+            <img src="../myndir/Search.svg" alt="search-icon" class="search-icon">
+          </div>
+        </div>
+
         <div class="lausnir-sort">
           <ul>
             <li><span>✓</span> Nýjast</li>
@@ -91,6 +101,7 @@
           </ul>
         </div>
       </div>
+
 
       <!-- Cards -->
       <div class="lausnir-grid">
