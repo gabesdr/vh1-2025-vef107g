@@ -29,13 +29,13 @@
 
     h1 {
       font-weight: 700;
-      font-size: clamp(1.75rem, 3.5vw + 0.5rem, 3.5rem);
+      font-size: clamp(1.75rem, 3.5vw + 0.5rem, 6rem);
       line-height: 1.1;
     }
     p {
       font-weight: 500;
       color: #64748B;
-      font-size: clamp(1.05rem, 1.2vw + 0.8rem, 2rem);
+      font-size: clamp(1.05rem, 1.2vw + 0.8rem, 1.9rem);
     }
   }
 }
@@ -47,7 +47,7 @@
 
   .content-inner {
     width: 100%;
-    max-width: 900px;
+    max-width: 1025px;
     padding-inline: 1rem;
     color: #0b0b0b;
 
