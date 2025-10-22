@@ -1,14 +1,14 @@
 .index-main {
-  display: flex;
-  flex-direction: column;
-  padding: 0;
-  font-family: Gelasio, serif;
-  color: #000;
-  background: #fff;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    font-family: Gelasio, serif;
+    color: #000;
+    background: #fff;
 }
 
 @media (width <= 770px) {
-  .index-main > *:not(.hero) {
-    padding-inline: 24px;
-  }
+    .index-main > *:not(.hero) {
+        padding-inline: 24px;
+    }
 }
