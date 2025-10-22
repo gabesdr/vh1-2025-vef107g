@@ -1,0 +1,82 @@
+.hero {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 600px;
+    color: #fff;
+    text-align: center;
+    background: url("./myndir/fartolva.jpg") center/cover no-repeat;
+
+    &::after {
+        position: absolute;
+        inset: 0;
+        content: "";
+        background: linear-gradient(to bottom, rgb(0 0 0 / 35%), rgb(0 0 0 / 60%));
+    }
+
+    .hero-content {
+        position: relative;
+        z-index: 2;
+        max-width: 800px;
+
+        h1 {
+        font-size: 72px;
+        font-weight: 700;
+        line-height: 120%;
+        letter-spacing: -3;
+        }
+
+        p {
+        max-height: 38px;
+        margin-bottom: 2rem;
+        font-size: 2rem;
+        font-weight: 400;
+        line-height: 120%;
+        }
+
+        .hero-buttons {
+        display: flex;
+        gap: 1rem;
+        justify-content: center;
+        padding-top: 2rem;
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 112px;
+            height: 40px;
+            font-size: 1rem;
+            font-weight: 500;
+            line-height: 1;
+            text-decoration: none;
+            cursor: pointer;
+            border: 1px solid #000;
+            border-radius: 8px;
+            transition: all 0.2s ease;
+
+            &.btn-primary {
+            color: #000;
+            background: #fff;
+            border: 1px solid #767676;
+
+            &:hover {
+                background: #f5f5f5;
+            }
+            }
+
+            &.btn-secondary {
+            color: #fff;
+            background: #2C2C2C;
+            border-color: #2C2C2C;
+
+            &:hover {
+                background: rgb(255 255 255 / 10%);
+            }
+            }
+        }
+        }
+    }
+}

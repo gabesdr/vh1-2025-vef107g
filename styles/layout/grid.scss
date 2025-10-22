@@ -3,12 +3,10 @@
     --gutter: 32px;
     --max-width: 1200px;
     --offset: 16px;
-    --grid-color: hsla(255, 75%, 75%, 0.25);
-
+    --grid-color: hsl(255deg 75% 75% / 25%);
     --grid-repeating-width: calc(100% / var(--columns));
     --grid-column-width: calc((100% / var(--columns)) - var(--gutter));
     --grid-background-width: calc(100% + var(--gutter));
-
     --grid-background-columns: repeating-linear-gradient(
         to right,
         var(--grid-color),
@@ -23,23 +21,17 @@ html {
 }
 
 html::before {
-    content: "";
     position: fixed;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-
+    inset: 0;
+    z-index: 9999;
     width: calc(100% - (2 * var(--offset)));
     max-width: var(--max-width);
+    min-height: 100vh;
     margin-inline: auto;
-
+    pointer-events: none;
+    content: "";
     background-image: var(--grid-background-columns);
     background-size: var(--grid-background-width) 100%;
-    min-height: 100vh;
-
-    z-index: 9999;
-    pointer-events: none;
     opacity: 1;
 }
 
@@ -47,14 +39,14 @@ body:not(.show-grid) html::before {
     display: none;
 }
 
-@media (max-width: 900px) {
+@media (width <= 900px) {
     :root {
         --columns: 8;
         --gutter: 24px;
     }
 }
 
-@media (max-width: 600px) {
+@media (width <= 600px) {
     :root {
         --columns: 4;
         --gutter: 16px;

@@ -1,0 +1,67 @@
+.lausnir-filter {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    max-width: 277px;
+    height: fit-content;
+    padding: 1rem;
+    background: #fff;
+    border: 1px solid #d9d9d9;
+    border-radius: 8px;
+
+    ul {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+
+        li {
+        display: flex;
+        gap: 0.5rem;
+        align-items: flex-start;
+        color: #757575;
+
+        input[type="checkbox"] {
+            width: 16px;
+            height: 16px;
+            accent-color: #000;
+            cursor: pointer;
+        }
+
+        label {
+            font-size: 1rem;
+            font-weight: 400;
+            color: #1e1e1e;
+
+            span {
+            line-height: 140%;
+            color: #757575;
+            }
+        }
+        }
+    }
+
+    .cost {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        justify-content: space-between;
+
+        label {
+        font-size: 1rem;
+        color: #222;
+        }
+
+        input[type="range"] {
+        width: 208px;
+        accent-color: #000;
+        cursor: pointer;
+        }
+    }
+
+    @media (width <= 900px) {
+        display: none;
+    }
+}

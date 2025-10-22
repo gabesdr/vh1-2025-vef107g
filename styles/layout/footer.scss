@@ -35,9 +35,9 @@
   .footer-brand {
     display: flex;
     flex-direction: column;
-    max-width: 262px;
     gap: 24px;
     align-items: flex-start;
+    max-width: 262px;
 
     .symbol,
     .footer-logo {
@@ -94,20 +94,20 @@
     }
   }
 
-  @media (max-width: 900px) {
+  @media (width <= 900px) {
     .footer-inner {
       flex-direction: column;
       gap: 2rem;
-      padding-inline: 1rem;
       padding: 0;
+      padding-inline: 1rem;
     }
 
     .footer-brand {
       flex-direction: row;
       align-items: center;
       justify-content: flex-start;
-      max-width: 1200px;
       width: 100%;
+      max-width: 1200px;
       margin-bottom: 2rem;
 
       .social {

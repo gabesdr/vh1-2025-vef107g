@@ -17,324 +17,37 @@
   }
 }
 
-/* === FILTER === */
-.lausnir-filter {
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
-  height: fit-content;
-  padding: 1rem;
-  background: #fff;
-  border: 1px solid #d9d9d9;
-  border-radius: 8px;
-  max-width: 277px;
-
-  ul {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-    padding: 0;
-    margin: 0;
-    list-style: none;
-
-    li {
-      display: flex;
-      gap: 0.5rem;
-      align-items: flex-start;
-      color: #757575;
-
-      input[type="checkbox"] {
-        width: 16px;
-        height: 16px;
-        accent-color: #000;
-        cursor: pointer;
-      }
-
-      label {
-        font-size: 1rem;
-        color: #1e1e1e;
-        font-weight: 400;
-
-        span {
-          color: #757575;
-          line-height: 140%;
-        }
-      }
-    }
-  }
-
-  .cost {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    gap: 8px;
-
-    label {
-      font-size: 1rem;
-      color: #222;
-    }
-
-    input[type="range"] {
-      width: 208px;
-      accent-color: #000;
-      cursor: pointer;
-    }
-  }
-
-  @media (width <= 900px) {
-    display: none;
-  }
-}
-
-/* === CONTENT === */
 .lausnir-content {
   display: flex;
   flex-direction: column;
   gap: 3rem;
 }
 
-/* === TOPBAR (filter + search + sort) === */
-.lausnir-topbar {
-  display: flex;
-  align-items: center;
-  gap: 36px;
-
-  /* Filter icon button */
-  .filter-button {
-    display: none;
-    width: 40px;
-    height: 40px;
-    border: 1px solid #d9d9d9;
-    border-radius: 8px;
-    background: #fff;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-
-    img {
-      width: 18px;
-      height: 18px;
-    }
+/* Mobile fixes */
+@media (width <= 700px) {
+  html,
+  body {
+    overflow-x: hidden;
   }
 
-  /* Search wrapper */
-  .search-wrapper {
-        position: relative;
-        flex: 1;
-        max-width: 100%;
-        box-sizing: border-box;
-        overflow: hidden;
-    }
+  .lausnir-main {
+    padding-inline: 24px;
+  }
+
+  .lausnir-main,
+  .lausnir-content,
+  .lausnir-topbar,
+  .search-wrapper,
+  .lausnir-search {
+    box-sizing: border-box;
+    min-width: 0;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
 
   .lausnir-search {
-  display: block;
-  width: 100%;
-  min-width: 440px; /* ✅ allows flex to shrink correctly */
-  flex: 1;
-  padding: 12px 2.5rem 12px 1rem;
-  font-size: 1rem;
-  outline: none;
-  border: 1px solid #d9d9d9;
-  border-radius: 9999px;
-  transition: border 0.2s ease;
-  box-sizing: border-box; /* ✅ ensures padding doesn't add width */
-
-  &:focus {
-    border-color: #000;
+    flex: 1;
+    width: 100%;
+    min-width: 0;
   }
-}
-
-  .search-icon {
-    position: absolute;
-    right: 1rem;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 16px;
-    height: 16px;
-    pointer-events: none;
-    opacity: 0.7;
-  }
-
-  /* Sorting buttons */
-  .lausnir-sort {
-    ul {
-      display: flex;
-      gap: 8px;
-      padding: 0;
-      margin: 0;
-      list-style: none;
-
-      li {
-        padding: 8px 14px;
-        font-size: 1rem;
-        font-weight: 400;
-        cursor: pointer;
-        transition: all 0.2s ease;
-        color: #757575;
-        border-radius: 8px;
-        border: 1px solid transparent;
-        white-space: nowrap;
-
-        &:hover {
-          background: #f5f5f5;
-        }
-
-        &:first-child {
-          border: 1px solid #2c2c2c;
-          color: #fff;
-          background: #2c2c2c;
-        }
-      }
-    }
-  }
-
-  /* === MOBILE LAYOUT === */
-  @media (width <= 900px) {
-    flex-direction: column;
-    align-items: stretch;
-    gap: 1rem;
-
-    /* row fyrir takka og search saman */
-    .filter-search-row {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 0.75rem;
-
-      .filter-button {
-        display: flex;
-        flex-shrink: 0;
-        padding: 12px;
-        border-radius: 9999px;
-        background-color: #2C2C2C;
-        width: 44px;
-        height: 44px;
-      }
-
-      .filter-button img {
-        width: 20px;
-        height: 20px;
-      }
-
-      .search-wrapper {
-        flex: 1;
-        max-width: 100%;
-      }
-    }
-
-    .lausnir-sort ul {
-      display: flex;
-      gap: 0.5rem;
-      flex-wrap: nowrap;
-      overflow-x: auto;
-      scrollbar-width: none;
-    }
-  }
-}
-
-/* === GRID === */
-.lausnir-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 24px 2rem;
-    margin-bottom: 2rem;
-
-    @media (width <= 1100px) {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    @media (width <= 700px) {
-        grid-template-columns: 1fr;
-    }
-    }
-
-    .lausn-card {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        padding: 24px;
-        overflow: hidden;
-        background: #fff;
-        border: 1px solid #e0e0e0;
-        border-radius: 8px;
-        transition: transform 0.2s ease, box-shadow 0.2s ease;
-
-    &:hover {
-        box-shadow: 0 4px 10px rgb(0 0 0 / 5%);
-        transform: translateY(-4px);
-    }
-
-    img {
-        width: 100%;
-        height: 160px;
-        margin-bottom: 1rem;
-        object-fit: cover;
-    }
-
-    h2 {
-        margin-bottom: 8px;
-        font-size: 24px;
-        font-weight: 600;
-        line-height: 120%;
-        letter-spacing: -0.5px;
-    }
-
-    p {
-        flex-grow: 1;
-        margin-bottom: 1rem;
-        font-size: 1rem;
-        line-height: 1.4;
-        color: #444;
-    }
-
-    .price {
-        display: block;
-        margin-bottom: 1rem;
-        font-weight: 600;
-    }
-
-    .btn {
-        display: inline-block;
-        padding: 12px;
-        font-size: 0.9rem;
-        font-weight: 400;
-        width: 50%;
-        color: #fff;
-        text-align: center;
-        text-decoration: none;
-        background: #2C2C2C;
-        border-radius: 6px;
-        transition: background 0.2s ease;
-
-        &:hover {
-            background: #333;
-        }
-    }
-}
-
-@media (width <= 700px) {
-    html, body {
-    overflow-x: hidden;
-    }
-
-    .lausnir-main {
-        padding-inline: 24px;
-    }
-
-    .lausnir-main,
-    .lausnir-content,
-    .lausnir-topbar,
-    .search-wrapper,
-    .lausnir-search {
-        min-width: 0;
-        box-sizing: border-box;
-        max-width: 100%;
-        overflow-x: hidden;
-    }
-
-    .lausnir-search {
-        width: 100%;
-        min-width: 0;
-        flex: 1;
-    }
 }
