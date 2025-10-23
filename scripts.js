@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
     function toggleMenu() {
         const isOpen = body.classList.toggle('is-menu-open');
         navToggle.setAttribute('aria-label', isOpen ? 'Loka valmynd' : 'Opna valmynd');
-        mobileMenu.hidden = !isOpen; // Hidden Attribute
+        mobileMenu.hidden = !isOpen;
     }
     // Click-Event sem stjórnar toggle-menu button í html.
     navToggle.addEventListener('click', toggleMenu);
