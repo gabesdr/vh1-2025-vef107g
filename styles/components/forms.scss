@@ -55,10 +55,6 @@ input[type="submit"],
     border-radius: 8px;
     transition: background 0.2s ease;
 
-    &:hover {
-        background: #333;
-    }
-
     &.btn-outline {
         color: #2C2C2C;
         background: transparent;
