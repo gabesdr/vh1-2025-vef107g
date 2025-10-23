@@ -65,7 +65,7 @@ Fótur skal innihalda fjóra flokka:
 - [Michael Dziedzic](https://unsplash.com/@lazycreekimages?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash) á [Unsplash](https://unsplash.com/photos/clear-glass-ball-with-box-gEN5Btvf2Eg?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash)
 - Avatar mynd úr Figma hönnun
 
->  Útgáfa v.0.5
+>  Útgáfa v.1.0 - Final
 
 ## Útgáfusaga
 
@@ -81,4 +81,8 @@ Fótur skal innihalda fjóra flokka:
 | 0.3.1  | Read-Me Update |
 | 0.4    | Header toggle-button update |
 | 0.5    | semi-Grid blueprint Um-Okkur merge og read me update |
+| 0.5.1  | Grid update |
+| 0.6    | SCSS Final, Um-Okkur Final |
+| 0.7    | HTML final, indentation fix |
+| 1.0    | Final |
 
